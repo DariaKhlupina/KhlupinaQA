@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>САЙТ-ВИЗИТКА</title>
+</head>
+<body>
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее
+контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:60%;">
+<tr>
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="1" - двойная рамка толщиной в 1px
+background="images/168.png" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table
+border="1"
+background="images/455.jpg"
+bgcolor="#FEFCFF"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<th>
+<h1>САЙТ-ВИЗИТКА</h1>
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+<table
+border="1"
+bgcolor="#FEFCFF"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<!--Создаём ячейку
+Оформление:
+rowspan="2" - объединяем две ячейки в одну.
+Число объединяемых ячеек по числу ячеек в сайдбаре.
+style="width:80%" - основной контент занимает 80% всей площади,
+оставшиеся 20% для сайдбара-->
+<td
+rowspan="2"
+style="width:80%">
+<h2>Основная информация:</h2>
+<p style="text-indent:20px">
+Привет, меня зовут Даша и это мой сайт-визитка. Здесь вы можете найти информацию обо мне и посмотреть моё любимое видео.</p>
+<p style="text-indent:20px">Моё любимое видео:</p>
+<h1><iframe width="560" height="315" src="https://www.youtube.com/embed/jeJmJk3yooM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h1>
+</td>
+
+<!--САЙДБАР-->
+<td bgcolor="#FEFCFF">
+<h3>Навыки:</h3>
+<p>Youtrack</p>
+<p>Git</p>
+<p>Github</p>
+<p>Testrail</p>
+<p>Ручное тестирование</p>
+</td>
+</tr>
+<tr>
+<td
+bgcolor="#FEFCFF"
+align="center">
+<h3>Контакты:</h3>
+<p>+79112224444</p>
+</td>
+</tr>
+</table>
+
+<!--ПОДВАЛ-->
+<table
+border="1"
+bgcolor="#FEFCFF"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<th>
+<h3>Конец!</h3>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
